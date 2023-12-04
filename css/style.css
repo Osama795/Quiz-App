@@ -6,8 +6,10 @@
 body {
   font-family: Tajawal, Tahoma, Arial;
   /* background-color: var(--main-color); */
+  
+  /* background-image: linear-gradient(to right, #0f337d, #275cc5); */
   background-image: linear-gradient(100deg, #0f337d, #1853cb, #0f337d, #1853cb);
-/*   background-image: url(../imgs/bg.jpg); */
+  background-image: url(../imgs/bg.jpg);
   /* background-repeat: no-repeat; */
   position: relative;
   overflow: hidden;
@@ -336,6 +338,9 @@ body {
 @media (max-width: 768px) {
   .quiz-app .bullets {
     padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
   }
 }
 .quiz-app .bullets .spans {
@@ -372,9 +377,9 @@ body {
 }
 @media (max-width: 768px) {
   .quiz-app .bullets .spans span {
-    width: 20px;
-    height: 20px;
-    font-size: 14px;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
   }
 }
 .quiz-app .bullets .spans span.on {
@@ -396,8 +401,8 @@ body {
 }
 @media (max-width: 768px) {
   .quiz-app .bullets .countdown {
-    width: 50px;
-    padding: 0;
+    width: 80px;
+    margin: 0px auto;
   }
 }
 .quiz-app .results {
