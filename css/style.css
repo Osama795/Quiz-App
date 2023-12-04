@@ -5,6 +5,7 @@
 }
 body {
   font-family: Tajawal, Tahoma, Arial;
+  background-color: var(--main-color);
   background-image: url(/imgs/bg.jpg);
   /* background-repeat: no-repeat; */
   position: relative;
