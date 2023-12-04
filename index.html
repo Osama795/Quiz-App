@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-cog"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>عداد الاسئلة</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">إظهار</span>
+            <span class="no" data-display="hide">إخفاء</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>الوقت</h4>
+          <div class="time-option">
+            <span class="yes active" data-display="show">إظهار</span>
+            <span class="no" data-display="hide">إخفاء</span>
+          </div>
+        </div>
+        <!-- <button class="reset-option">افتراضي</button> -->
+      </div>
+    </div>
+  <!-- End Settings Box -->
+
+    </div>
+    <div class="quiz-app">
+      <div class="quiz-cat">
+        اختر قسم الاسئلة : 
+        <button class="all_questions">متنوع</button>
+        <button class="islamic_questions">إسلامية</button>
+        <button class="sport_questions">رياضة</button>
+        <button class="genral_questions">معلومات عامة</button>
+        <button class="art_questions">فن</button>
+        <!-- <button class="d_questions">منوع</button> -->
+      </div>
+      <div class="quiz-info">
+        <div class="category">القسم : <span></span></div>
+        <div class="count">عدد الاسئله : <span></span></div>
+      </div>
+      <div class="quiz-area" align="center">هنا سوف تظهر الاسئلة بعد اختيار القسم</div>
+      <div class="answers-area"></div>
+      <span class="off alert">قم باختيار اجابه من الخياران ,لم تختر اجابه !</span>
+      <button class="submit-button">تأكيد الاجابة</button>
+      <div class="bullets">
+        <div class="spans"></div>
+        <div class="countdown"></div>
+      </div>
+      <div class="results" align="center"></div>
+    </div>
+
+    <footer>
+      <p>Made With Love ❤️ Osama Ahmed</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
